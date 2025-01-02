@@ -1,0 +1,187 @@
+
+body {
+  background-color: #f9fafb;
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+}
+.container {
+
+}
+.title {
+  font-size: 13px;
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.logo {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+}
+
+/* Input Section */
+#speechToText {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;;
+}
+#micButton {
+  background-color: #24c8ad;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+#micButton:hover {
+  background-color: #155c50;
+}
+
+/* Process Button */
+#processButton {
+  padding: 10px 15px;
+  background-color: #24c8ad;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+#processButton:hover {
+  background-color: #155c50;
+}
+
+/* Key Words List */
+#wordList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+#wordList li {
+  background-color: #ffc107;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#wordList li:hover {
+  background-color: #e0a800;
+}
+
+/* Video Section */
+#playPauseButton {
+  background-color: #24c8ad;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+#playPauseButton:hover {
+  background-color: #155c50;
+}
+#videoPlayer {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+h6 {
+  font-size: 13px;
+}
+input{
+  font-size: 12px;
+}
+
+
+/* Video Section Styling */
+.video-section {
+  margin-top: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#videoPlayer {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.custom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-wrapper:hover .custom-overlay {
+  opacity: 1;
+}
+
+#playPauseButton {
+  padding: 10px 15px;
+  background-color: #24c8ad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+#playPauseButton:hover {
+  background-color: #06705f;
+}
+
+.logoheader {
+  padding: 6px;
+  border-radius: 9px;
+  box-shadow: 0px 3px 2px 1px #dddddd;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  #videoPlayer {
+    width: 100%;
+}
+  .container {
+    width: 380px;
+  }
+  .title {
+      font-size: 22px;
+  }
+  #micButton, #processButton, #playPauseButton {
+      font-size: 12px;
+      padding: 8px 12px;
+  }
+  #speechToText {
+      padding: 8px;
+  }
+  #wordList li {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+  }
+}
